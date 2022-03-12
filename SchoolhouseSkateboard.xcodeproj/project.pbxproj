@@ -18,6 +18,11 @@
 		F7CE155C27DC6DDF004894FE /* SchoolhouseSkateboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CE155B27DC6DDF004894FE /* SchoolhouseSkateboardTests.swift */; };
 		F7CE156627DC6DE0004894FE /* SchoolhouseSkateboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CE156527DC6DE0004894FE /* SchoolhouseSkateboardUITests.swift */; };
 		F7CE156827DC6DE0004894FE /* SchoolhouseSkateboardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CE156727DC6DE0004894FE /* SchoolhouseSkateboardUITestsLaunchTests.swift */; };
+		F7CE157527DC726B004894FE /* Skater.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CE157427DC726B004894FE /* Skater.swift */; };
+		F7CE157727DC9C7C004894FE /* MenuLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CE157627DC9C7C004894FE /* MenuLayer.swift */; };
+		F7CE157A27DCA0EA004894FE /* gem.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7CE157827DCA0EA004894FE /* gem.wav */; };
+		F7CE157B27DCA0EA004894FE /* jump.wav in Resources */ = {isa = PBXBuildFile; fileRef = F7CE157927DCA0EA004894FE /* jump.wav */; };
+		F7CE157D27DCA1A8004894FE /* sparks.sks in Resources */ = {isa = PBXBuildFile; fileRef = F7CE157C27DCA1A8004894FE /* sparks.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +57,12 @@
 		F7CE156127DC6DE0004894FE /* SchoolhouseSkateboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchoolhouseSkateboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7CE156527DC6DE0004894FE /* SchoolhouseSkateboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolhouseSkateboardUITests.swift; sourceTree = "<group>"; };
 		F7CE156727DC6DE0004894FE /* SchoolhouseSkateboardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolhouseSkateboardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F7CE157427DC726B004894FE /* Skater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skater.swift; sourceTree = "<group>"; };
+		F7CE157627DC9C7C004894FE /* MenuLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLayer.swift; sourceTree = "<group>"; };
+		F7CE157827DCA0EA004894FE /* gem.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gem.wav; sourceTree = "<group>"; };
+		F7CE157927DCA0EA004894FE /* jump.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = jump.wav; sourceTree = "<group>"; };
+		F7CE157C27DCA1A8004894FE /* sparks.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = sparks.sks; sourceTree = "<group>"; };
+		F7CE157E27DCA9B0004894FE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +93,7 @@
 		F7CE153527DC6DDE004894FE = {
 			isa = PBXGroup;
 			children = (
+				F7CE157E27DCA9B0004894FE /* README.md */,
 				F7CE154027DC6DDE004894FE /* SchoolhouseSkateboard */,
 				F7CE155A27DC6DDF004894FE /* SchoolhouseSkateboardTests */,
 				F7CE156427DC6DE0004894FE /* SchoolhouseSkateboardUITests */,
@@ -105,11 +117,16 @@
 				F7CE154127DC6DDE004894FE /* AppDelegate.swift */,
 				F7CE154327DC6DDE004894FE /* GameScene.sks */,
 				F7CE154527DC6DDE004894FE /* Actions.sks */,
+				F7CE157627DC9C7C004894FE /* MenuLayer.swift */,
 				F7CE154727DC6DDE004894FE /* GameScene.swift */,
+				F7CE157C27DCA1A8004894FE /* sparks.sks */,
 				F7CE154927DC6DDE004894FE /* GameViewController.swift */,
 				F7CE154B27DC6DDE004894FE /* Main.storyboard */,
 				F7CE154E27DC6DDF004894FE /* Assets.xcassets */,
+				F7CE157827DCA0EA004894FE /* gem.wav */,
+				F7CE157927DCA0EA004894FE /* jump.wav */,
 				F7CE155027DC6DDF004894FE /* LaunchScreen.storyboard */,
+				F7CE157427DC726B004894FE /* Skater.swift */,
 			);
 			path = SchoolhouseSkateboard;
 			sourceTree = "<group>";
@@ -235,11 +252,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CE157A27DCA0EA004894FE /* gem.wav in Resources */,
 				F7CE154D27DC6DDE004894FE /* Main.storyboard in Resources */,
 				F7CE154427DC6DDE004894FE /* GameScene.sks in Resources */,
+				F7CE157B27DCA0EA004894FE /* jump.wav in Resources */,
 				F7CE154F27DC6DDF004894FE /* Assets.xcassets in Resources */,
 				F7CE155227DC6DDF004894FE /* LaunchScreen.storyboard in Resources */,
 				F7CE154627DC6DDE004894FE /* Actions.sks in Resources */,
+				F7CE157D27DCA1A8004894FE /* sparks.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7CE154827DC6DDE004894FE /* GameScene.swift in Sources */,
+				F7CE157527DC726B004894FE /* Skater.swift in Sources */,
+				F7CE157727DC9C7C004894FE /* MenuLayer.swift in Sources */,
 				F7CE154A27DC6DDE004894FE /* GameViewController.swift in Sources */,
 				F7CE154227DC6DDE004894FE /* AppDelegate.swift in Sources */,
 			);
@@ -451,6 +473,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -479,6 +502,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
